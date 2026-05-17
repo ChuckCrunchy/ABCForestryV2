@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Forestry Consulting — Environmental Consulting & Grant Management</title>
+  <meta name="description" content="Full-service environmental consulting specializing in grant writing and management, GIS mapping and analysis, and wildfire technical assistance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===================================== -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="ABC Forestry Consulting home">
+      <svg class="nav__logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="20" fill="rgba(255,255,255,0.08)"/>
+        <!-- Tree -->
+        <polygon points="20,6 27,20 13,20" fill="#4A7C4E"/>
+        <polygon points="20,12 28,26 12,26" fill="#2D5A31"/>
+        <rect x="18" y="26" width="4" height="7" rx="1" fill="#1B3A1D"/>
+        <!-- Ember glow -->
+        <circle cx="26" cy="14" r="3" fill="#E8A020" opacity="0.85"/>
+        <circle cx="26" cy="14" r="5" fill="#C84B15" opacity="0.25"/>
+      </svg>
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">ABC Forestry</span>
+        <span class="nav__logo-sub">Environmental Consulting</span>
+      </div>
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="#services" class="nav__link">Services</a></li>
+      <li><a href="projects.html" class="nav__link">Projects</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+
+    <a href="contact.html" class="nav__cta">Get in Touch</a>
+
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile nav overlay -->
+<div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+  <button class="nav__mobile-close" aria-label="Close menu">&times;</button>
+  <a href="index.html" class="nav__mobile-link">Home</a>
+  <a href="#services" class="nav__mobile-link">Services</a>
+  <a href="projects.html" class="nav__mobile-link">Projects</a>
+  <a href="contact.html" class="nav__mobile-link">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:16px">Get in Touch</a>
+</div>
+
+<!-- ===== HERO =========================================== -->
+<section class="hero" aria-label="Hero banner">
+  <!--
+    HERO IMAGE: Add your photo by updating .hero__bg in styles.css:
+    background: linear-gradient(...overlay...), url('images/hero.jpg');
+    background-size: cover; background-position: center;
+  -->
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__particles" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow">Environmental Consulting</div>
+      <h1 class="hero__title">
+        Stewarding Forests.<br>
+        Securing <em>Funding.</em><br>
+        Protecting Communities.
+      </h1>
+      <p class="hero__subtitle">
+        Full-spectrum environmental consulting from grant writing through closeout — delivering science-based solutions for forests, agencies, and landowners across the West.
+      </p>
+      <div class="hero__actions">
+        <a href="#services" class="btn btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          Our Services
+        </a>
+        <a href="contact.html" class="btn btn-ghost">Start a Project</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__fade" aria-hidden="true"></div>
+  <div class="hero__scroll-hint" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- ===== SERVICES ======================================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services__header reveal">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Comprehensive Forestry &amp; Environmental Services</h2>
+      <p class="section-subtitle">
+        Whether you need funding secured, landscape intelligence mapped, or a wildfire protection strategy built from the ground up — we bring the expertise to get it done.
+      </p>
+    </div>
+
+    <div class="services__grid">
+
+      <!-- Card 1: Grant Writing -->
+      <article class="service-card reveal reveal-d1">
+        <div class="service-card__icon-wrap" aria-hidden="true">
+          <!-- Document / scroll icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="3" width="18" height="22" rx="2"/>
+            <path d="M9 8h10M9 12h10M9 16h6"/>
+            <path d="M5 3c0-1.1.9-2 2-2h2l2 2-2 2H7a2 2 0 01-2-2z" fill="currentColor" stroke="none" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="service-card__tag">Grant Writing &amp; Management</div>
+        <h3 class="service-card__title">Funding from Application to Closeout</h3>
+        <p class="service-card__desc">
+          We manage the complete grant lifecycle — identifying opportunities, developing competitive proposals, maintaining federal compliance, and guiding you through financial closeout.
+        </p>
+        <ul class="service-card__list" aria-label="Service capabilities">
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Opportunity identification &amp; feasibility</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Proposal writing &amp; narrative development</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Budget development &amp; cost-share coordination</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Reporting, compliance &amp; closeout</li>
+        </ul>
+        <a href="contact.html" class="service-card__cta">
+          Work With Us
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 2: GIS Mapping -->
+      <article class="service-card reveal reveal-d2">
+        <div class="service-card__icon-wrap" aria-hidden="true">
+          <!-- Map/globe icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="14" cy="14" r="11"/>
+            <path d="M14 3c0 0-5 4-5 11s5 11 5 11M14 3c0 0 5 4 5 11s-5 11-5 11"/>
+            <path d="M3 14h22"/>
+            <path d="M4.5 9h19M4.5 19h19" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="service-card__tag">GIS Mapping &amp; Analysis</div>
+        <h3 class="service-card__title">Spatial Intelligence for Land Management</h3>
+        <p class="service-card__desc">
+          Precision geographic analysis that informs management decisions. We produce maps, models, and data products tailored to agencies, conservation organizations, and landowners.
+        </p>
+        <ul class="service-card__list" aria-label="Service capabilities">
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Vegetation &amp; fuels mapping</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Fire risk modeling &amp; hazard assessment</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Treatment area delineation &amp; prioritization</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Custom spatial data products &amp; deliverables</li>
+        </ul>
+        <a href="contact.html" class="service-card__cta">
+          Work With Us
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </article>
+
+      <!-- Card 3: Technical Assistance -->
+      <article class="service-card reveal reveal-d3">
+        <div class="service-card__icon-wrap" aria-hidden="true">
+          <!-- Flame / shield icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 24C8 24 4 19.5 4 14.5 4 9 8 6.5 8 6.5c0 0 0 4 4 5.5 0-3 2-7 2-7 1 2.5 5 5 5 9.5 0 1-.3 2-.7 2.8C19.8 16.4 20 15.3 20 14.5c0 0 2 1 2 5.5 0 2-2.5 4-8 4z"/>
+          </svg>
+        </div>
+        <div class="service-card__tag">Technical Assistance</div>
+        <h3 class="service-card__title">Wildfire Preparedness &amp; Forest Health</h3>
+        <p class="service-card__desc">
+          Science-based technical guidance on wildfire risk, community protection, and forest resilience — helping land managers, local governments, and homeowners reduce ignition exposure.
+        </p>
+        <ul class="service-card__list" aria-label="Service capabilities">
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Community Wildfire Protection Plans (CWPPs)</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Defensible space evaluations</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Fuels treatment planning &amp; design</li>
+          <li class="service-card__item"><span class="service-card__dot" aria-hidden="true"></span>Forest health assessments</li>
+        </ul>
+        <a href="contact.html" class="service-card__cta">
+          Work With Us
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ========================================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__inner">
+
+      <div class="about__image-wrap reveal">
+        <div class="about__image">
+          <!--
+            Replace .about__img-bg background with your image:
+            background-image: url('images/about-forest.jpg');
+          -->
+          <div class="about__img-bg"></div>
+        </div>
+        <div class="about__badge">
+          <span class="about__badge-num">A–Z</span>
+          <span class="about__badge-lbl">Grant Management</span>
+        </div>
+      </div>
+
+      <div class="about__text reveal reveal-d1">
+        <div class="section-label">About ABC Forestry</div>
+        <h2 class="section-title">Rooted in Science.<br>Driven by Results.</h2>
+        <p class="about__body">
+          ABC Forestry Consulting is an environmental consulting firm built around the realities of working forests, underfunded agencies, and communities on the edge of wildland fire. We partner with federal and state agencies, tribal nations, nonprofits, and private landowners to develop fundable projects, map complex landscapes, and deliver actionable management strategies.
+        </p>
+        <p class="about__body" style="margin-top: -16px;">
+          Our practice is expanding — grant management is our cornerstone, but our GIS capabilities and technical assistance programs are equally central to who we are and where we're headed.
+        </p>
+
+        <div class="about__stats">
+          <div class="about__stat">
+            <div class="about__stat-num">$12M+</div>
+            <div class="about__stat-lbl">in Grants Secured for Clients</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">40+</div>
+            <div class="about__stat-lbl">Projects Completed</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">6</div>
+            <div class="about__stat-lbl">Western States Served</div>
+          </div>
+          <div class="about__stat">
+            <div class="about__stat-num">100%</div>
+            <div class="about__stat-lbl">Compliance Rate on Funded Grants</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY CHOOSE US =================================== -->
+<section class="why-us">
+  <div class="container">
+    <div class="why-us__header reveal">
+      <div class="section-label">Why ABC Forestry</div>
+      <h2 class="section-title">The Difference Is in the Details</h2>
+      <p class="section-subtitle">
+        We've seen what happens when consultants hand off a report and disappear. We stay in it — from the first site visit to the final closeout document.
+      </p>
+    </div>
+
+    <div class="why-us__grid">
+      <div class="why-card reveal reveal-d1">
+        <div class="why-card__num">01</div>
+        <h3 class="why-card__title">End-to-End Grant Management</h3>
+        <p class="why-card__desc">
+          We don't just write the proposal. We manage the award — tracking deliverables, meeting reporting deadlines, coordinating with contracting officers, and shepherding you through closeout without surprises.
+        </p>
+      </div>
+      <div class="why-card reveal reveal-d2">
+        <div class="why-card__num">02</div>
+        <h3 class="why-card__title">Field-Grounded GIS Expertise</h3>
+        <p class="why-card__desc">
+          Our spatial analysis is informed by time in the field. Maps we produce are calibrated against ground-truth data, not just remote sensing outputs — so management decisions are based on real conditions.
+        </p>
+      </div>
+      <div class="why-card reveal reveal-d1" style="transition-delay: 0.22s;">
+        <div class="why-card__num">03</div>
+        <h3 class="why-card__title">Wildfire Fluency</h3>
+        <p class="why-card__desc">
+          Wildfire preparedness is both a technical and a community challenge. We bring scientific rigor alongside the communication skills to translate fire risk into actionable plans that get adopted and funded.
+        </p>
+      </div>
+      <div class="why-card reveal reveal-d2" style="transition-delay: 0.32s;">
+        <div class="why-card__num">04</div>
+        <h3 class="why-card__title">Expanding Capabilities</h3>
+        <p class="why-card__desc">
+          Our services are growing. As we add team members and deepen partnerships, we're expanding into watershed restoration, post-fire assessments, and collaborative landscape stewardship. Stay tuned.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===================================== -->
+<section class="cta-banner">
+  <div class="container cta-banner__content">
+    <h2 class="cta-banner__title">Ready to Fund Your Next Forest Project?</h2>
+    <p class="cta-banner__sub">Tell us about your landscape, your goals, and your timeline — we'll take it from there.</p>
+    <a href="contact.html" class="btn">Start the Conversation &rarr;</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ========================================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div>
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="20" fill="rgba(255,255,255,0.06)"/>
+          <polygon points="20,6 27,20 13,20" fill="#4A7C4E"/>
+          <polygon points="20,12 28,26 12,26" fill="#2D5A31"/>
+          <rect x="18" y="26" width="4" height="7" rx="1" fill="#1B3A1D"/>
+          <circle cx="26" cy="14" r="3" fill="#E8A020" opacity="0.85"/>
+        </svg>
+        <div class="footer__brand-name">ABC Forestry Consulting</div>
+        <div class="footer__brand-sub">Environmental Consulting</div>
+        <p class="footer__brand-desc">
+          Full-service environmental consulting for forests, agencies, and communities across the American West.
+        </p>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Navigate</div>
+        <a href="index.html" class="footer__link">Home</a>
+        <a href="#services" class="footer__link">Services</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Services</div>
+        <a href="contact.html" class="footer__link">Grant Writing</a>
+        <a href="contact.html" class="footer__link">Grant Management</a>
+        <a href="contact.html" class="footer__link">GIS Mapping</a>
+        <a href="contact.html" class="footer__link">Spatial Analysis</a>
+        <a href="contact.html" class="footer__link">Wildfire Preparedness</a>
+        <a href="contact.html" class="footer__link">Technical Assistance</a>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__contact-item">
+          <svg class="footer__contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9 6 9-6M3 8v11a1 1 0 001 1h16a1 1 0 001-1V8M3 8a1 1 0 011-1h16a1 1 0 011 1"/></svg>
+          info@abcforestrryconsulting.com
+        </div>
+        <div class="footer__contact-item">
+          <svg class="footer__contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005 5L14 12l5 2v3a2 2 0 01-2 2A16 16 0 013 5z"/></svg>
+          (530) 555-0142
+        </div>
+        <div class="footer__contact-item">
+          <svg class="footer__contact-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Northern California
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2026 ABC Forestry Consulting. All rights reserved.</p>
+      <div class="footer__legal">
+        <a href="#" class="footer__legal-link">Privacy Policy</a>
+        <a href="#" class="footer__legal-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
