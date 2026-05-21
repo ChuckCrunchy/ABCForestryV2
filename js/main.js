@@ -90,19 +90,39 @@ if (filterBtns.length && projectCards.length) {
 /* === CONTACT FORM ========================================== */
 const form = document.getElementById('contact-form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
     const originalText = btn.textContent;
-    btn.textContent = 'Message Sent!';
-    btn.style.background = 'var(--forest-mid)';
+
+    btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = originalText;
-      btn.style.background = '';
-      btn.disabled = false;
-      form.reset();
-    }, 3500);
+
+    const reset = (text, bg) => {
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3500);
+      btn.textContent = text;
+      btn.style.background = bg;
+    };
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        reset('Message Sent!', 'var(--forest-mid)');
+      } else {
+        reset('Something went wrong — try again', 'var(--ember)');
+      }
+    } catch {
+      reset('Network error — try again', 'var(--ember)');
+    }
   });
 }
 
