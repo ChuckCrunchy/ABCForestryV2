@@ -321,6 +321,18 @@ button { font-family: inherit; }
   background-position: center;
 }
 
+.hero__forest {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  pointer-events: none;
+  line-height: 0;
+}
+.hero__forest svg {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 44vh, 420px);
+}
+
 .hero__particles {
   position: absolute;
   inset: 0;

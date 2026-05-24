@@ -55,6 +55,25 @@
     background-size: cover; background-position: center;
   -->
   <div class="hero__bg" aria-hidden="true"></div>
+
+  <div class="hero__forest" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="ff" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+          <stop offset="45%" stop-color="#fff" stop-opacity="1"/>
+        </linearGradient>
+        <mask id="fm"><rect width="1440" height="420" fill="url(#ff)"/></mask>
+      </defs>
+      <g mask="url(#fm)">
+        <!-- distant background trees -->
+        <path fill="#0D200E" opacity="0.45" d="M0,420 L0,280 L30,255 L55,228 L80,255 L105,280 L135,255 L160,218 L185,255 L210,280 L245,258 L270,225 L295,258 L320,280 L355,252 L380,212 L405,252 L430,280 L465,248 L490,208 L515,248 L540,280 L575,242 L600,200 L625,242 L650,280 L685,238 L710,195 L735,238 L760,280 L795,240 L820,198 L845,240 L870,280 L905,245 L930,205 L955,245 L980,280 L1015,242 L1040,200 L1065,242 L1090,280 L1125,248 L1150,208 L1175,248 L1200,280 L1235,252 L1260,215 L1285,252 L1310,280 L1345,258 L1370,225 L1395,258 L1420,280 L1440,280 L1440,420 Z"/>
+        <!-- closer foreground trees -->
+        <path fill="#060E06" opacity="0.62" d="M0,420 L0,300 L20,265 L65,185 L110,265 L130,300 L148,255 L175,160 L202,255 L228,300 L250,245 L285,145 L320,245 L348,300 L368,238 L400,130 L432,238 L462,300 L482,228 L510,118 L538,228 L572,300 L590,220 L618,108 L646,220 L680,300 L698,215 L725,100 L752,215 L786,300 L806,218 L832,105 L858,218 L892,300 L912,225 L940,112 L968,225 L1002,300 L1022,230 L1048,120 L1074,230 L1108,300 L1128,240 L1158,135 L1188,240 L1220,300 L1240,248 L1268,148 L1296,248 L1328,300 L1348,255 L1375,165 L1402,255 L1440,300 L1440,420 Z"/>
+      </g>
+    </svg>
+  </div>
+
   <div class="hero__particles" aria-hidden="true"></div>
 
   <div class="container">
